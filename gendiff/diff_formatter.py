@@ -1,5 +1,4 @@
-from gendiff.dicts_diff import build_diff
-from gendiff.parser import parse
+from gendiff.parser import parse, build_diff
 from gendiff.formaters import get_formatter
 from gendiff.data import prepare_data
 
