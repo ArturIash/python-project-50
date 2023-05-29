@@ -1,7 +1,7 @@
-from gendiff.diff import build_diff
-from gendiff.parser import parse
-from gendiff.formaters import get_formatter
-from gendiff.data import prepare_data
+#from gendiff.diff import build_diff
+#from gendiff.parser import parse
+#from gendiff.formaters import get_formatter
+#from gendiff.data import prepare_data
 
 
 def generate_diff(path_file1: str, path_file2: str,
