@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-'''from gendiff.diff_with_formatter import generate_diff
+from gendiff.diff_with_formatter import generate_diff
 from gendiff.cli import parse
 
 
@@ -12,9 +12,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 '''
-
-
 import argparse
 import json
 
@@ -61,3 +60,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+'''
