@@ -1,4 +1,6 @@
-def build_diff(parced_data1: dict, parced_data2: dict) -> list[dict]:
+from typing import List
+
+def build_diff(parced_data1: dict, parced_data2: dict) -> List[dict]:
     diff = list()
     sorted_keys = sorted(
         list(set(parced_data1.keys()) | set(parced_data2.keys()))
