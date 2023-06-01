@@ -1,7 +1,7 @@
-from typing import Any
+from typing import Any, Union
 
 
-def to_str(value: Any) -> [str | int]:
+def to_str(value: Any) -> Union[str, int]:
     if isinstance(value, dict):
         return "[complex value]"
     if isinstance(value, bool):
