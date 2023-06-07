@@ -1,5 +1,6 @@
 from typing import Dict, List
 
+
 def build_diff(parced_data1: Dict, parced_data2: Dict) -> List[Dict]:
     diff = list()
     sorted_keys = sorted(
