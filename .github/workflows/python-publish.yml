@@ -44,6 +44,6 @@ jobs:
           make test-cov
       - name: Sending Reporter
         env:
-          GITHUB_TOKEN: ${{ secrets.TEST_REPORTER_ID }}
+          CC_TEST_REPORTER_ID: 7ad2e87123c02711ec362c1068b2e97f526729f0908bafcbc64f3b8372fbd552
         run: |
-          ./cc-test-reporter after-build -r "$GITHUB_TOKEN"
+          ./cc-test-reporter after-build -r 
