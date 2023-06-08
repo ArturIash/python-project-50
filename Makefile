@@ -20,4 +20,4 @@ test:
 	poetry run pytest -vv
 
 test-cov:
-	poetry run pytest --cov=gendiff --cov-report xml
+	poetry run pytest --cov=gendiff --cov-report xml tests/
