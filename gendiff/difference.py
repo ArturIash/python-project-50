@@ -1,5 +1,17 @@
 from typing import Dict, List
+from typing import Tuple
+from os.path import splitext
 
+EXTENSIONS = ('yaml', 'yml', 'json')
+
+
+def prepare_data(path_file: str) -> Tuple[str, str]:
+    extension = splitext(path_file)[1][1:]
+    if extension in EXTENSIONS:
+        with open(path_file) as f:
+            data = f.read()
+            return data, extension
+    raise ValueError(f"Unrecognized extension: {extension}")
 
 def build_diff(parced_data1: Dict, parced_data2: Dict) -> List[Dict]:
     diff = list()
