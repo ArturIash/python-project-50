@@ -13,6 +13,7 @@ def prepare_data(path_file: str) -> Tuple[str, str]:
             return data, extension
     raise ValueError(f"Unrecognized extension: {extension}")
 
+
 def build_diff(parced_data1: Dict, parced_data2: Dict) -> List[Dict]:
     diff = list()
     sorted_keys = sorted(
